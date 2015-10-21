@@ -1,0 +1,38 @@
+body {
+  background: #333;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-family: Dosis;
+}
+
+.clear {
+ margin-right: 100px; 
+}
+
+.calculator {
+  margin: 50px 500px 50px 500px;
+  display: block;
+  background: #FFF;
+}
+
+.keys {
+  transition: 0.2s;
+  color: #CCFFFF;
+  background: #00E6E6;
+  margin: 2px;
+  padding: 2px;
+  font-size: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid white;
+}
+
+.keys:hover {
+  color: #FFF;
+  cursor: pointer; 
+  box-shadow: 0 0 0px 0.2em rgba(255, 255, 255, 0.5) inset;
+}
+
+.special {
+  background: #33ADFF;
+}
