@@ -6,16 +6,44 @@ body {
 }
 
 .clear {
- margin-right: 100px; 
+  padding-right: 50px;
+  background: #33ADFF !important;
+  margin-left: 10px; 
+}
+
+.clear:hover {
+  box-shadow: 0 0 0px 0.2em rgba(255, 255, 255, 0.5) inset;  
+  color: #FFF;
+  cursor: pointer; 
+}
+
+.screen {
+  height: 35px; /* 45 */
+  width: 152px; /* 165 */
+  float: right; 
+  padding: 7px 4px 7px 2px; 
+  margin-right: 10px; 
+  background-color: #33ADFF;
+  box-shadow: 0 0 0px 0.2em rgba(255, 255, 255, 0.5) inset;
+  
+  font-size: 15px;
+  line-height: 40px;
+  color: #FFF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding-right: 5px;  
 }
 
 .calculator {
-  margin: 50px 500px 50px 500px;
+  margin: 50px 520px 40px 520px; /* margin: 50px 550px 50px 500px; */ 
+  padding: 10px 0px 10px 0px;
   display: block;
-  background: #FFF;
+  background: #A3FFFF;
+  box-shadow: 0 0 0px 0.3em rgba(255, 255, 255, 0.5) inset;
+  border-width: 10%;
 }
 
-.keys {
+.keys, .clear {
   transition: 0.2s;
   color: #CCFFFF;
   background: #00E6E6;
@@ -24,7 +52,7 @@ body {
   font-size: 2em;
   width: 1.5em;
   height: 1.5em;
-  border: 1px solid white;
+  border: 1px solid #FFF;
 }
 
 .keys:hover {
