@@ -1,8 +1,16 @@
 body {
-  background: #333;
+  background: #00BCD4; /* #333; */
+  height: 600px;
   padding: 30px 30px 30px 30px;
   text-align: center;
   font-family: Dosis;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 3em;
+  text-shadow: 2px 1px 2px #000;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .clear {
@@ -34,7 +42,7 @@ body {
 }
 
 .calculator {
-  margin: 50px 520px 40px 520px !important; 
+  margin: 50px 520px 150px 520px !important; /* 80 */
   padding: 10px 0px 10px 0px;
   display: block;
   background: #A3FFFF;
@@ -62,4 +70,28 @@ body {
 
 .special {
   background: #33ADFF;
+}
+
+footer {
+  background: #33ADFF; /* #1976D2 */
+  height: 80px;
+  padding: 5px;
+  border: 2px;
+  border-radius: 20px;
+}
+
+footer p, a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+
+footer ul li {
+  margin-left: 10px;
+  border: 2px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #FFF;
+  display: inline;
 }
