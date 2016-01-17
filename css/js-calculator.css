@@ -2,22 +2,32 @@ body {
     background: #80f1ff;
     text-align: center;
     font-family: Dosis;
+    box-sizing: border-box;
 }
 
 h1 {
-    color: #FFF;
+    color: #A3FFFF;
     font-size: 3.5em;
-    text-shadow: 2px 1px 2px #000;
-    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 1px 2px #000; 
+    color: rgba(163, 255, 255, 0.8);
 }
 
+h2 {
+    margin-top: -30px;
+    color: #33ffff;
+    text-shadow: 2px 1px 2px #000; 
+    color: rgba(163, 255, 255, 0.8);
+}
+    
+
+
 .calculator {
-    height: 260px;
-    max-width: 240px;
+    height: 325px; 
+    max-width: 300px;
     padding: 10px 0px 10px 0px;
     display: block;
     background: #A3FFFF;
-    box-shadow: 0 0 0px 0.3em rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 0 0px 0.4em rgba(255, 255, 255, 0.5) inset;
     border-width: 10%;
     text-align: center;
     margin-top: 100px;
@@ -25,26 +35,26 @@ h1 {
     margin-right: auto;
 }
 
-.clear {
-    padding-right: 50px;
-    margin-left: 10px;
+.clear { 
+    padding: 2px 4px 5px 5px; !important
+    margin: 2px 4px 0px 5px; !important
 }
 
 
 .screen {
-    height: 35px;
-    width: 152px;
+    height: 47px; 
+    width: 196px; 
     float: right;
-    padding: 7px 4px 7px 2px;
-    margin-right: 10px;
+    padding: 3px 2px 7px 0px; 
+    margin: 4px 10px 0px 0px;
     background-color: #33ADFF;
     box-shadow: 0 0 0px 0.1em rgba(255, 255, 255, 0.5) inset;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 30px; 
+    line-height: 40px; 
     color: #FFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     text-align: right;
-    padding-right: 5px;
+    padding-right: 5px; 
 }
 
 .keys,
@@ -52,11 +62,11 @@ h1 {
     transition: 0.2s;
     color: #CCFFFF;
     background: #00E6E6;
-    margin: 2px;
-    padding: 2px;
-    font-size: 2em;
-    width: 1.5em;
-    height: 1.5em;
+    margin: 3px; 
+    padding: 2px; 
+    font-size: 2.2em; 
+    width: 1.7em; 
+    height: 1.7em;
     border: 1px solid #FFF;
 }
 
@@ -71,34 +81,80 @@ h1 {
     background: #33ADFF;
 }
 
-footer {
+.footer {
     background: #33ADFF no-repeat 50% 50%;
     background-size: cover;
     min-height: 100%;  
     max-width: 100%;
-    max-height: auto;   
+    max-height: auto;
     padding: 5px;
-    margin-top: 350px;
+    margin-top: 160px;
     font-size: 1.4em;    
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    min-height: 100%;
+    border-top: 8px #4dd2ff outset;
 }
 
-footer p,
+.footer p,
 a {
     color: #FFF;
     text-decoration: none;
     padding: 10px;
 }
 
-footer ul li {
-    border: 2px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #FFF;
+.footer ul li {
     display: inline;
     margin: 10px;
+    text-align: center;
+}
+
+.footer .fa {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 1.5;
+}
+
+.footer .fa:hover {
+    transition: 0.3s;
+    text-shadow: 2px 1px 2px #333;
+}
+
+.footer .contact .fa:hover {
+    background-color: #e6b800; 
+}
+
+.footer .linkedin .fa:hover {
+    background-color: #117BB7;
+}
+
+.footer .github .fa:hover {
+    background-color: #24478f;    
+}
+
+.footer .twitter .fa:hover {
+    background-color: #007acc;
+}
+
+.footer .codepen .fa:hover {
+    background-color: #ff6600;
+}
+
+.footer .freecodecamp .fa:hover {
+    background-color: #009933;
+}
+
+.footer p span {
+    color:  #ffff66;
 }
 
 @media screen and (max-width: 315px) {
@@ -120,17 +176,44 @@ footer ul li {
         box-shadow: 0 0 0px 0.1em rgba(255, 255, 255, 0.5) inset;
     }
     
-}
+    .footer {
+        margin-top: 50px;
+    }
 
-@media screen and (max-width: 600px) {  
-    footer { 
-        margin-top: 150px;
+    .footer ul {
+        padding-top: 10px;
+        margin: 0px;
     }
     
-    footer ul li {
-        margin: 10px;
-        display: block;
+    .footer ul li {
+        width: 100%;
+        margin: auto;
         
     }
     
+    .footer .fa {
+        font-size: 1.0em;
+        padding: 8px;
+        margin: 2px;
+        width: 25px;
+        height: 25px;
+        line-height: 1.2;
+        display: inline-block;      
+    }
+}
+
+@media screen and (max-width: 850px) {  
+    .footer { 
+        margin-top: 150px;
+    }
+    
+    .footer .fa {
+        font-size: 1.0em;
+        padding: 8px;
+        margin: 2px;
+        width: 25px;
+        height: 25px;
+        line-height: 1.2;
+        display: inline-block;      
+    }    
 }
