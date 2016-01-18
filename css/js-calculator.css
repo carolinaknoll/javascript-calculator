@@ -3,6 +3,14 @@ body {
     text-align: center;
     font-family: Dosis;
     box-sizing: border-box;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3690f0+14,6db3f2+25,57cef2+74,1e69de+79 */
+background: #3690f0; /* Old browsers */
+background: -moz-linear-gradient(top,  #3690f0 14%, #6db3f2 25%, #57cef2 74%, #1e69de 79%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3690f0 14%,#6db3f2 25%,#57cef2 74%,#1e69de 79%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3690f0 14%,#6db3f2 25%,#57cef2 74%,#1e69de 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3690f0', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+
 }
 
 h1 {
