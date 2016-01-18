@@ -4,11 +4,11 @@ body {
     font-family: Dosis;
     box-sizing: border-box;
     
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3690f0+14,6db3f2+25,57cef2+74,1e69de+79 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3690f0+14,6db3f2+25,57cef2+75,1e69de+83 */
 background: #3690f0; /* Old browsers */
-background: -moz-linear-gradient(top,  #3690f0 14%, #6db3f2 25%, #57cef2 74%, #1e69de 79%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #3690f0 14%,#6db3f2 25%,#57cef2 74%,#1e69de 79%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #3690f0 14%,#6db3f2 25%,#57cef2 74%,#1e69de 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(top,  #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3690f0 14%,#6db3f2 25%,#57cef2 75%,#1e69de 83%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3690f0 14%,#6db3f2 25%,#57cef2 75%,#1e69de 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3690f0', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
 
 }
@@ -96,7 +96,7 @@ h2 {
     max-width: 100%;
     max-height: auto;
     padding: 5px;
-    margin-top: 160px;
+    margin-top: 200px;
     font-size: 1.4em;    
     text-align: center; 
     margin-left: auto;
@@ -110,26 +110,26 @@ h2 {
 a {
     color: #FFF;
     text-decoration: none;
-    padding: 10px;
+    padding: 0px;
 }
 
 .footer ul li {
     display: inline;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
 }
 
 .footer .fa {
     color: #FFF;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 2px solid #FFF;
     border-radius: 50%;
     padding: 8px;
     margin: 5px;
-    width: 50px;
-    height: 50px;
-    line-height: 1.5;
+    width: 40px;
+    height: 40px;
+    line-height: 1.4;
 }
 
 .footer .fa:hover {
