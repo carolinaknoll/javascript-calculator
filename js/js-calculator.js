@@ -1,19 +1,19 @@
 let numbers = [];
 
 $('.calculator button').on('click', (e) => {
-  if (e.target.className.includes('equal')) {
+  if (e.target.className.includes('equals')) {
     let result = eval(numbers.join(''));
-    $('.screen').text(result);
+    $('#display').text(result);
     numbers = [result];
   }
 
   else if (e.target.className.includes('clear')) {
-    $('.screen').text('');
+    $('#display').text('0');
     numbers = [];
   }
 
   else {
     numbers.push(e.target.textContent);
-    $('.screen').text(numbers.join(''));
+    $('#display').text(numbers.join(''));
   }
 });
