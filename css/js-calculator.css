@@ -11,8 +11,7 @@ body {
   display: flex;
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3690f0', endColorstr='#1e69de', GradientType=0);
   flex-direction: column;
-  font-family: Dosis;
-  height: 100vh;
+  font-family: 'Dosis';
   margin: 0;
   min-height: 100vh;
   padding: 0;
@@ -34,58 +33,47 @@ h2 {
 
 .calculator {
   background: #A3FFFF;
-  border-width: 10%;
-  box-shadow: 0 0 0px 0.4em rgba(255, 255, 255, 0.5) inset;
-  display: block;
+  border: 4px solid #FFF;
   flex: 1 0 auto;
-  height: 325px;
-  margin: 100px auto 0;
-  max-width: 300px;
-  padding: 10px 0px 10px 0px;
+  max-height: 385px;
+  margin: 125px auto 0;
+  max-width: 335px;
+  padding: 5px 0 10px;
   text-align: center;
-}
-
-.clear {
-  margin: 2px 0px 4px 7px !important;
-  padding: 2px 4px 5px 5px !important;
+  width: 100%;
 }
 
 .display {
   background-color: #33ADFF;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   color: #FFF;
   float: right;
   font-size: 30px;
-  height: 58px;
-  line-height: 55px;
-  margin: 2px 14px 0px 2px;
+  height: 65px;
+  line-height: 60px;
+  margin-right: 10px;
+  margin-top: 4px;
   overflow: hidden;
-  padding-right: 5px;
   text-align: right;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  width: 190px;
-}
-
-.row {
-  margin: 0 10px;
+  width: 230px;
 }
 
 .key,
 .clear {
   background: #00E6E6;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   color: #CCFFFF;
   font-size: 2.2em;
-  height: 1.7em;
-  margin: 3px;
-  padding: 2px;
+  height: 2em;
+  margin: 4px;
   transition: 0.2s;
-  width: 1.7em;
+  width: 2em;
 }
 
 .key:hover,
 .clear:hover {
-  box-shadow: 0 0 0px 0.2em rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 0px 0.3em rgba(255, 255, 255, 0.5) inset;
   color: #FFF;
   cursor: pointer;
 }
@@ -116,13 +104,13 @@ h2 {
   text-decoration: none;
 }
 
-.footer ul li {
+.footer .social-list li {
   display: inline;
   margin: 5px;
   text-align: center;
 }
 
-.footer .fa {
+.footer .social-list .fa {
   border-radius: 50%;
   border: 2px solid #FFF;
   color: #FFF;
@@ -135,7 +123,7 @@ h2 {
   width: 40px;
 }
 
-.footer .fa:hover {
+.footer .social-list .fa:hover {
   transition: 0.3s;
   text-shadow: 2px 1px 2px #333;
 }
@@ -164,7 +152,7 @@ h2 {
   background-color: #009933;
 }
 
-.footer p span {
+.footer .footer-note .fa {
   color: #ffff66;
 }
 
@@ -173,36 +161,32 @@ h2 {
     height: 220px;
     width: 200px;
   }
+
   .key,
   .clear {
     font-size: 1.5em;
     height: 40px;
     width: 40px;
   }
+
   .display {
     box-shadow: 0 0 0px 0.1em rgba(255, 255, 255, 0.5) inset;
     height: 28px;
     width: 125px;
   }
+
   .footer {
     margin-top: 50px;
   }
-  .footer ul {
+
+  .footer .social-list {
     margin: 0px;
     padding-top: 10px;
   }
-  .footer ul li {
+
+  .footer .social-list li {
     margin: auto;
     width: 100%;
-  }
-  .footer .fa {
-    display: inline-block;
-    font-size: 1.0em;
-    height: 25px;
-    line-height: 1.2;
-    margin: 2px;
-    padding: 8px;
-    width: 25px;
   }
 }
 
@@ -210,7 +194,8 @@ h2 {
   .footer {
     margin-top: 150px;
   }
-  .footer .fa {
+
+  .footer .social-list .fa {
     display: inline-block;
     font-size: 1.0em;
     height: 25px;
