@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: -moz-linear-gradient(top, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
+  background: -webkit-linear-gradient(top, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
+  background: #80f1ff;
+  background: linear-gradient(to bottom, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
+  box-sizing: border-box;
+  display: flex;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3690f0', endColorstr='#1e69de', GradientType=0);
+  flex-direction: column;
+  font-family: 'Dosis';
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  color: rgba(163, 255, 255, 0.9);
+  font-size: 3.5em;
+  text-shadow: 2px 1px 2px #000;
+}
+
+h2 {
+  color: rgba(163, 255, 255, 0.9);
+  margin-top: -30px;
+  text-shadow: 2px 1px 2px #000;
+}
+
+@media screen and (max-width: 315px) {
+  .calculator {
+    height: 220px;
+    width: 200px;
+  }
+
+  .key,
+  .clear {
+    font-size: 1.5em;
+    height: 40px;
+    width: 40px;
+  }
+
+  .display {
+    box-shadow: 0 0 0px 0.1em rgba(255, 255, 255, 0.5) inset;
+    height: 28px;
+    width: 125px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  .footer .social-list {
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .footer .social-list li {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    margin-top: 150px;
+  }
+
+  .footer .social-list .fa {
+    display: inline-block;
+    font-size: 1.0em;
+    height: 25px;
+    line-height: 1.2;
+    margin: 2px;
+    padding: 8px;
+    width: 25px;
+  }
+}
