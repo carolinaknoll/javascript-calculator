@@ -1,14 +1,19 @@
 let numbers = [];
 
-$('.calculator button').on('click', (e) => {
+document.addEventListener('click', (e) => {
+
+  if (!e.target.matches('.calculator button')) {
+    return;
+  }
+
   if (e.target.className.includes('equals')) {
     let result = eval(numbers.join(''));
-    $('#display').text(result);
+    document.getElementById('display').textContent = result;
     numbers = [result];
   }
 
   else if (e.target.className.includes('clear')) {
-    $('#display').text('0');
+    document.getElementById('display').textContent = '0';
     numbers = [];
   }
 
@@ -63,6 +68,7 @@ $('.calculator button').on('click', (e) => {
     }
 
     numbers.push(e.target.textContent);
-    $('#display').text(numbers.join(''));
+
+    document.getElementById('display').textContent = numbers.join('');
   }
-});
+})
