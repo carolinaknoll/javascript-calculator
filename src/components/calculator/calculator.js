@@ -4,7 +4,9 @@ export default class Calculator extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      numbers: [],
+    };
   }
 
   componentDidMount = () => {
@@ -12,25 +14,28 @@ export default class Calculator extends Component {
   }
 
   handleClick = (e) => {
-    let numbers = [];
+    let numbers = this.state.numbers;
 
     if (!e.target.matches('.calculator button')) {
       return;
     }
 
     if (e.target.className.includes('equals')) {
-      let result = eval(numbers.join(''));
+      let result = eval(this.state.numbers.join(''));
       document.getElementById('display').textContent = result;
+
       numbers = [result];
+      this.setState({numbers: [result]});
     }
 
     else if (e.target.className.includes('clear')) {
       document.getElementById('display').textContent = '0';
-      numbers = [];
+
+      this.setState({numbers: []});
     }
 
     else {
-      let calculation = numbers.join('');
+      let calculation = this.state.numbers.join('');
 
       if (e.target.textContent === '0') {
 
@@ -77,11 +82,14 @@ export default class Calculator extends Component {
 
         // ensure eval is calculated based on new cleaned values
         numbers = calculation.split('');
+        this.setState({numbers: numbers});
       }
 
       numbers.push(e.target.textContent);
 
-      document.getElementById('display').textContent = numbers.join('');
+      this.setState({numbers: numbers});
+
+      document.getElementById('display').textContent = this.state.numbers.join('');
     }
   }
 
