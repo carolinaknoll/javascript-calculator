@@ -1,9 +1,9 @@
-#### :bar_chart: Javascript-Calculator
-:octocat: Online calculator that allows multiple operations. Created with HTML, CSS and jQuery.
+#### :bar_chart: JavaScript-Calculator
+:octocat: Online calculator that allows multiple operations. There are two versions: the first one was created with HTML, CSS and jQuery, which was then changed to Vanilla JavaScript. The second version was created using React, npm and Webpack.
 
 ***
 
-This project is part of the FreeCodeCamp [Frontend Libraries Projects](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator/), and follows a series of requested user stories. You can open my [GitHub Pages version](http://carolinaknoll.github.io/javascript-calculator/) for this project and click 'Run Tests' on the FreeCodeCamp Test Suite on the top left corner to see the below tests pass.
+This project is part of the FreeCodeCamp [Frontend Libraries Projects](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator/), and follows a series of requested user stories. You can open my [GitHub Pages version](http://carolinaknoll.github.io/javascript-calculator/) for this project and click 'Run Tests' on the FreeCodeCamp Test Suite on the top left corner to see the below tests pass. You can also view the code for the React version of this project.
 
 - [x] User Story #1: My calculator should contain a clickable element containing an = (equal sign) with a corresponding id="equals".
 - [x] User Story #2: My calculator should contain 10 clickable elements containing one number each from 0-9, with the following corresponding IDs: id="zero", id="one", id="two", id="three", id="four", id="five", id="six", id="seven", id="eight", and id="nine".
@@ -22,7 +22,8 @@ This project is part of the FreeCodeCamp [Frontend Libraries Projects](https://l
 - [x] User Story #15: My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).
 
 ##### With this project, I learned to...
-– Make all number elements have an equal, grid-like margin between them.
-– Make each key pressed be displayed on the calculator screen.
-– Use a gradient as the background of the project.
-– Select HTML and CSS elements with jQuery and make them able to perform calculator operations.
+– Make all number elements have an equal, grid-like margin between them.   
+– Make each key pressed be displayed on the calculator screen.   
+– Use a gradient as the background of the project.   
+– Use Regular Expressions to clean and format number operations according to the User Stories.   
+– Select HTML and CSS elements with jQuery, and then with Vanilla JS, and make them able to perform calculator operations.   
