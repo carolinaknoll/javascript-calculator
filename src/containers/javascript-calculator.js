@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Calculator from '../components/calculator/calculator';
-import Header from '../components/common/header';
-import Footer from '../components/common/footer';
+import Calculator from '../components/calculator';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 export default class JavaScriptCalculator extends Component {
   render() {
