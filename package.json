@@ -20,8 +20,7 @@
   "homepage": "https://github.com/carolinaknoll/javascript-calculator#readme",
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1"
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
