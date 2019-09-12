@@ -1,5 +1,5 @@
 # dependencies
-react-javascript-calculator/node_modules
+node_modules
 
 # testing
 /coverage
