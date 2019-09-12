@@ -4,9 +4,11 @@
   "description": "Online Javascript Calculator, part of the FreeCodeCamp Frontend Libraries projects.",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --mode development --open --hot",
+    "start": "node_modules/.bin/webpack-dev-server --config webpack.dev.js --mode development --open --hot",
     "build": "node_modules/.bin/webpack --config webpack.prod.js --mode production",
-    "serve": "node_modules/.bin/http-server ./dist"
+    "serve": "node_modules/.bin/http-server ./dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/carolinaknoll/javascript-calculator#readme",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
@@ -29,10 +32,13 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
   }
 }
