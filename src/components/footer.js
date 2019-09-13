@@ -12,7 +12,7 @@ export default function Footer() {
         <li className="social-small-box"><a href="http://www.freecodecamp.com/carolinaknoll"><i className="social-icon fa fa-free-code-camp"></i></a></li>
       </ul>
 
-      <p>Handcrafted with <i className="fa fa-heart"></i> and <i className="fa fa-coffee"></i> by Carolina Knoll.</p>
+      <p className="bottom-note">Handcrafted with <i className="fa fa-heart"></i> and <i className="fa fa-coffee"></i> by Carolina Knoll.</p>
     </footer>
   );
 }

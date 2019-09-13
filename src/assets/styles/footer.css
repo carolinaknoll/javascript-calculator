@@ -1,6 +1,6 @@
 .footer {
-  background: #33ADFF;
-  border-top: 8px #4dd2ff outset;
+  background: #0a0c0f;
+  border-top: 4px #0083b3 outset;
   flex-shrink: 0;
   font-size: 1.4em;
   margin: 200px auto 0;
@@ -27,7 +27,7 @@
 
 .footer .social-list .fa {
   border-radius: 50%;
-  border: 2px solid #FFF;
+  border: 2px solid #0083b3;
   color: #FFF;
   font-size: 1.3em;
   height: 40px;
@@ -35,10 +35,18 @@
   margin: 5px;
   padding: 8px;
   text-align: center;
+  transition: 0.5s;
   width: 40px;
 }
 
 .footer .social-list .fa:hover {
-  transition: 0.3s;
-  text-shadow: 2px 1px 2px #333;
+  color: #0083b3;
+}
+
+.footer .bottom-note {
+  padding-bottom: 10px;
+}
+
+.footer .bottom-note .fa {
+  color: #0083b3;
 }
