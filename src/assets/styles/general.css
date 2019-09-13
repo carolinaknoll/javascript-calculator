@@ -3,24 +3,15 @@ html {
 }
 
 body {
-  background: -moz-linear-gradient(top, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
-  background: -webkit-linear-gradient(top, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
   background: #80f1ff;
-  background: linear-gradient(to bottom, #3690f0 14%, #6db3f2 25%, #57cef2 75%, #1e69de 83%);
   box-sizing: border-box;
   display: flex;
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3690f0', endColorstr='#1e69de', GradientType=0);
   flex-direction: column;
   font-family: 'Dosis';
-  margin: auto;
   height: 100vh;
+  margin: auto;
   padding: 0;
-  text-align: center;
   width: 100%;
-}
-
-.content-container {
-  flex: 1 0 auto;
 }
 
 h1 {
