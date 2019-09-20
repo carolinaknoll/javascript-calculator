@@ -6,13 +6,9 @@ import Footer from '../components/footer';
 export default class JavaScriptCalculator extends Component {
   render() {
     return (
-      <div>
-        <div className="content-container">
-          <Header />
-
-          <Calculator />
-        </div>
-
+      <div className="content-container">
+        <Header />
+        <Calculator />
         <Footer />
       </div>
     );

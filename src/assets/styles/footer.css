@@ -3,7 +3,6 @@
   border-top: 4px #0083b3 outset;
   flex-shrink: 0;
   font-size: 1.4em;
-  margin: 200px auto 0;
   text-align: center;
 }
 
@@ -15,8 +14,8 @@
 .footer a {
   color: #FFF;
   padding: 0px;
-  text-decoration: none;
   margin: 0;
+  text-decoration: none;
 }
 
 .footer .social-list li {
@@ -52,10 +51,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  .footer {
-    margin-top: 150px;
-  }
-
   .footer .social-list .fa {
     display: inline-block;
     font-size: 1.0em;

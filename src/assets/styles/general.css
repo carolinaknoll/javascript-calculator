@@ -5,11 +5,19 @@ html {
 body {
   background: #1f242d;
   box-sizing: border-box;
+  font-family: 'Dosis';
+  margin: auto;
+}
+
+.content-container {
   display: flex;
   flex-direction: column;
-  font-family: 'Dosis';
   height: 100vh;
   margin: auto;
-  padding: 0;
   width: 100%;
+}
+
+.header-container,
+.calculator-container {
+  flex: 1 0 auto;
 }

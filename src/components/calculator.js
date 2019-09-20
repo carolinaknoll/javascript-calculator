@@ -95,38 +95,40 @@ export default class Calculator extends Component {
 
 	render() {
     return (
-      <div className="calculator">
-        <div className="top">
-          <button id="clear" className="clear">C</button>
-          <div id="display" className="display"></div>
-        </div>
+      <div className="calculator-container">
+        <div className="calculator">
+          <div className="top">
+            <button id="clear" className="clear">C</button>
+            <div id="display" className="display"></div>
+          </div>
 
-        <div className="row">
-          <button id="seven" className="key">7</button>
-          <button id="eight" className="key">8</button>
-          <button id="nine" className="key">9</button>
-          <button id="add" className="special key">+</button>
-        </div>
+          <div className="row">
+            <button id="seven" className="key">7</button>
+            <button id="eight" className="key">8</button>
+            <button id="nine" className="key">9</button>
+            <button id="add" className="special key">+</button>
+          </div>
 
-        <div className="row">
-          <button id="four" className="key">4</button>
-          <button id="five" className="key">5</button>
-          <button id="six" className="key">6</button>
-          <button id="subtract" className="special key">-</button>
-        </div>
+          <div className="row">
+            <button id="four" className="key">4</button>
+            <button id="five" className="key">5</button>
+            <button id="six" className="key">6</button>
+            <button id="subtract" className="special key">-</button>
+          </div>
 
-        <div className="row">
-          <button id="one" className="key">1</button>
-          <button id="two" className="key">2</button>
-          <button id="three" className="key">3</button>
-          <button id="divide" className="special key">/</button>
-        </div>
+          <div className="row">
+            <button id="one" className="key">1</button>
+            <button id="two" className="key">2</button>
+            <button id="three" className="key">3</button>
+            <button id="divide" className="special key">/</button>
+          </div>
 
-        <div className="row">
-          <button id="zero" className="key">0</button>
-          <button id="decimal" className="key">.</button>
-          <button id="equals" className="special key equals">=</button>
-          <button id="multiply" className="special key">*</button>
+          <div className="row">
+            <button id="zero" className="key">0</button>
+            <button id="decimal" className="key">.</button>
+            <button id="equals" className="special key equals">=</button>
+            <button id="multiply" className="special key">*</button>
+          </div>
         </div>
       </div>
     );
