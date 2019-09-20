@@ -1,9 +1,11 @@
-.header {
-  text-align: center;
-  color: #4dd2ff;
+.header .title {
+  font-size: 3.5em;
 }
 
 .header .title,
 .header .subtitle {
+  color: #4dd2ff;
   margin: 10px 0 0;
+  text-align: center;
+  text-shadow: 2px 1px 2px #000;
 }

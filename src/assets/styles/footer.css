@@ -50,3 +50,19 @@
 .footer .bottom-note .fa {
   color: #0083b3;
 }
+
+@media screen and (max-width: 850px) {
+  .footer {
+    margin-top: 150px;
+  }
+
+  .footer .social-list .fa {
+    display: inline-block;
+    font-size: 1.0em;
+    height: 25px;
+    line-height: 1.2;
+    margin: 2px;
+    padding: 8px;
+    width: 25px;
+  }
+}
